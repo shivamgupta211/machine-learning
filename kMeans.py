@@ -10,8 +10,8 @@ from sklearn.cluster import KMeans
 df = pd.read_excel('titanic.xls');
 df.drop(['name','body'],1,inplace=True)
 df.fillna(0,inplace=True)
-#df['sex'] = pd.index([]*1309)
 
+#   converts the string fields to the int fields with value ranging from 0 to len(set(column))
 for col in df.columns:
     #print(df[col].values)
     if df[col].dtypes != 'int64' and df[col].dtypes != 'float64':
