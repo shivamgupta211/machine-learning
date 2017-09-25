@@ -6,6 +6,7 @@ import pandas as pd
 from sklearn import preprocessing, cross_validation
 from sklearn.cluster import KMeans
 
+# this is absurd
 
 df = pd.read_excel('titanic.xls');
 df.drop(['name','body'],1,inplace=True)
